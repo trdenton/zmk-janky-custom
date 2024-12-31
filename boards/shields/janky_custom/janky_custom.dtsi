@@ -16,7 +16,7 @@
 		    , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		    ;
 	};
-	default_transform: matrix_transform {
+	default_transform: matrix_transform0 {
 		compatible = "zmk,matrix-transform";
 		columns = <18>;
 		rows = <5>;
