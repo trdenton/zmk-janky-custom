@@ -1,0 +1,12 @@
+file_format: "1"
+id: janky_custom
+name: Janky Custom
+type: shield
+url: https://github.com/trdenton/zmk-janky-custom/
+requires: [pro_micro]
+exposes: []
+features:
+  - keys
+siblings:
+  - janky_custom_left
+  - janky_custom_right
