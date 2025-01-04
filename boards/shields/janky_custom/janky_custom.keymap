@@ -14,14 +14,14 @@
 				>;
       };
   };
- # bluetooth stuff:
- # next: home+right arrow
- # prev: home+left arrow
- # clear: home+0
- # profile 0: home+1
- # profile 1: home+2
- # profile 2: home+3
- # profile 3: home+4
+ // bluetooth stuff:
+ // next: home+right arrow
+ // prev: home+left arrow
+ // clear: home+0
+ // profile 0: home+1
+ // profile 1: home+2
+ // profile 2: home+3
+ // profile 3: home+4
     combos {
         compatible = "zmk,combos";
         combo_clr {
@@ -60,7 +60,7 @@
             bindings = <&bt BT_SEL 3>;
         };
 
-# f keys: end + top row keys, 1 through 12
+// f keys: end + top row keys, 1 through 12
 	combo_f1 {
             timeout-ms = <50>;
             key-positions = <43 0>;
