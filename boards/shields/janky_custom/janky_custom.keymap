@@ -6,12 +6,120 @@
     compatible = "zmk,keymap";
       default_layer {
         bindings = <
-          &kp PLUS    &kp N1    &kp N2   &kp N3   &kp N4    &kp N5   &none     &none   &none        &none    &none    &none     &kp N6  &kp N7  &kp N8    &kp N9   &kp N0   &kp MINUS
-          &kp TAB     &kp Q     &kp W    &kp F    &kp P     &kp G    &none     &none   &none        &none    &none    &none     &kp J   &kp L   &kp U     &kp Y    &kp SEMI &kp BSLH
-          &kp ESC     &kp A     &kp R    &kp S    &kp T     &kp D    &none     &none   &none        &none    &none    &none     &kp H   &kp N   &kp E     &kp I    &kp O    &kp SQT
-          &kp LSHFT   &kp Z     &kp X    &kp C    &kp V     &kp B    &kp LCTRL &kp HOME &kp LALT    &kp PG_UP &kp LGUI  &kp RCTRL &kp K   &kp M   &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-          &none       &kp GRAVE &kp BSLH &kp LEFT &kp RIGHT &kp BSPC &kp DEL   &kp END  &none       &none    &kp PG_DN &kp ENTER   &kp SPACE &kp UP  &kp DOWN  &kp LBKT &kp RBKT &none
+          &kp PLUS    &kp N1    &kp N2   &kp N3   &kp N4    &kp N5   &none     &none   &none        &none     &none     &none     &kp N6    &kp N7  &kp N8    &kp N9   &kp N0   &kp MINUS
+          &kp TAB     &kp Q     &kp W    &kp F    &kp P     &kp G    &none     &none   &none        &none     &none     &none     &kp J     &kp L   &kp U     &kp Y    &kp SEMI &kp BSLH
+          &kp ESC     &kp A     &kp R    &kp S    &kp T     &kp D    &none     &none   &none        &none     &none     &none     &kp H     &kp N   &kp E     &kp I    &kp O    &kp SQT
+          &kp LSHFT   &kp Z     &kp X    &kp C    &kp V     &kp B    &kp LCTRL &kp HOME &kp LALT    &kp PG_UP &kp LGUI  &kp RCTRL &kp K     &kp M   &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+          &none       &kp GRAVE &kp BSLH &kp LEFT &kp RIGHT &kp BSPC &kp DEL   &kp END  &none       &none     &kp PG_DN &kp ENTER &kp SPACE &kp UP  &kp DOWN  &kp LBKT &kp RBKT &none
 				>;
-		};
+      };
+  };
+ # bluetooth stuff:
+ # next: home+right arrow
+ # prev: home+left arrow
+ # clear: home+0
+ # profile 0: home+1
+ # profile 1: home+2
+ # profile 2: home+3
+ # profile 3: home+4
+    combos {
+        compatible = "zmk,combos";
+        combo_clr {
+            timeout-ms = <50>;
+            key-positions = <34 7>;
+            bindings = <&bt BT_CLR>;
+        };
+        combo_nxt {
+            timeout-ms = <50>;
+            key-positions = <34 40>;
+            bindings = <&bt BT_NXT>;
+        };
+        combo_prv {
+            timeout-ms = <50>;
+            key-positions = <34 39>;
+            bindings = <&bt BT_PRV>;
+        };
+        combo_d0 {
+            timeout-ms = <50>;
+            key-positions = <34 1>;
+            bindings = <&bt BT_SEL 0>;
+        };
+        combo_d1 {
+            timeout-ms = <50>;
+            key-positions = <34 2>;
+            bindings = <&bt BT_SEL 1>;
+        };
+        combo_d2 {
+            timeout-ms = <50>;
+            key-positions = <34 3>;
+            bindings = <&bt BT_SEL 2>;
+        };
+        combo_d3 {
+            timeout-ms = <50>;
+            key-positions = <34 4>;
+            bindings = <&bt BT_SEL 3>;
+        };
+
+# f keys: end + top row keys, 1 through 12
+	combo_f1 {
+            timeout-ms = <50>;
+            key-positions = <43 0>;
+            bindings = <&kb F1>;
 	};
+	combo_f2 {
+            timeout-ms = <50>;
+            key-positions = <43 1>;
+            bindings = <&kb F2>;
+	};
+	combo_f3 {
+            timeout-ms = <50>;
+            key-positions = <43 2>;
+            bindings = <&kb F3>;
+	};
+	combo_f4 {
+            timeout-ms = <50>;
+            key-positions = <43 3>;
+            bindings = <&kb F4>;
+	};
+	combo_f5 {
+            timeout-ms = <50>;
+            key-positions = <43 4>;
+            bindings = <&kb F5>;
+	};
+	combo_f6 {
+            timeout-ms = <50>;
+            key-positions = <43 5>;
+            bindings = <&kb F6>;
+	};
+	combo_f7 {
+            timeout-ms = <50>;
+            key-positions = <43 6>;
+            bindings = <&kb F7>;
+	};
+	combo_f8 {
+            timeout-ms = <50>;
+            key-positions = <43 7>;
+            bindings = <&kb F8>;
+	};
+	combo_f9 {
+            timeout-ms = <50>;
+            key-positions = <43 8>;
+            bindings = <&kb F9>;
+	};
+	combo_f10 {
+            timeout-ms = <50>;
+            key-positions = <43 9>;
+            bindings = <&kb F10>;
+	};
+	combo_f11 {
+            timeout-ms = <50>;
+            key-positions = <43 10>;
+            bindings = <&kb F11>;
+	};
+	combo_f12 {
+            timeout-ms = <50>;
+            key-positions = <43 11>;
+            bindings = <&kb F12>;
+	};
+    };
 };
