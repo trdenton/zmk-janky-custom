@@ -7,13 +7,13 @@
       default_layer {
         bindings = <
           //0                                                                                       //9       
-          &kp PLUS    &kp N1    &kp N2   &kp N3   &kp N4    &kp N5   &none     &none   &none        &none     &none     &none     &kp N6    &kp N7  &kp N8    &kp N9   &kp N0   &kp MINUS
+          &kp EQUAL    &kp N1    &kp N2   &kp N3   &kp N4    &kp N5   &none     &none   &none        &none     &none     &none     &kp N6    &kp N7  &kp N8    &kp N9   &kp N0   &kp MINUS
           //18                                                                                      //27
           &kp TAB     &kp Q     &kp W    &kp F    &kp P     &kp G    &none     &none   &none        &none     &none     &none     &kp J     &kp L   &kp U     &kp Y    &kp SEMI &kp BSLH
           //36                                                                                      //45
           &kp ESC     &kp A     &kp R    &kp S    &kp T     &kp D    &none     &none   &none        &none     &none     &none     &kp H     &kp N   &kp E     &kp I    &kp O    &kp SQT
           //54                                                                 //61                 //63
-          &kp LSHFT   &kp Z     &kp X    &kp C    &kp V     &kp B    &kp LCTRL &kp HOME &kp LALT    &kp PG_UP &kp LGUI  &kp RCTRL &kp K     &kp M   &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+          &kp LSHFT   &kp Z     &kp X    &kp C    &kp V     &kp B    &kp LCTRL &kp HOME &kp LALT    &kp LGUI &kp PG_UP  &kp RCTRL &kp K     &kp M   &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
           //72                                                                 //79                 //81
           &none       &kp GRAVE &kp BSLH &kp LEFT &kp RIGHT &kp BSPC &kp DEL   &kp END  &none       &none     &kp PG_DN &kp ENTER &kp SPACE &kp UP  &kp DOWN  &kp LBKT &kp RBKT &none
 				>;
